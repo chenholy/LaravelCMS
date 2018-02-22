@@ -3,7 +3,7 @@
 
 
 <div class="container">
-  <div class="siteIcon"><img src="{{asset('images/face/15.png')}}" alt="" data-toggle="tooltip" data-placement="top" title="Welcome to PeiC cms demo" draggable="false" /></div>
+  <div class="siteIcon"><img src="{{asset('images/15.png')}}" alt="" data-toggle="tooltip" data-placement="top" title="Welcome to PeiC cms demo" draggable="false" /></div>
   <form action="" method="post" autocomplete="off" class="form-signin" style="border: solid 2px black;border-radius:8px;">
     {{csrf_field()}}
     <h2 class="form-signin-heading">Admin Login</h2>
