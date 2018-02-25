@@ -31,4 +31,8 @@ class DeleteController extends BaseController{
     return back();
 
   }
+  public function cancel(){
+    return redirect('admin/article');
+  }
+
 }

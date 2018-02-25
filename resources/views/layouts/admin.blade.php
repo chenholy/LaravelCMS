@@ -79,7 +79,7 @@
           <li id="indexbar"><a href="{{asset('admin/index')}}">OVERVIEW</a></li> <!--working on ways to change active bar with more dynamic ways-->
         </ul>
         <ul class="nav nav-sidebar">
-          <li id="articlebar"><a  href="{{url('admin/article')}}" >ARTICLE</a></li>
+          <li id="articlebar"><a id="articleref"  href="{{url('admin/article')}}" >ARTICLE</a></li>
           <li><a href="">##</a></li>
           <li><a href="">##</a></li>
           <!-- <li><a data-toggle="tooltip" data-placement="bottom" title="网站暂无留言功能">留言</a></li> gives a tooltip with title message when user mouse hover this element -->

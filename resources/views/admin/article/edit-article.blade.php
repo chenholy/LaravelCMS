@@ -2,6 +2,7 @@
 @section('content')
 <script>
 $('#articlebar').addClass('active');
+$('#articleref').attr("href","");
 </script>
 
 <div class="col-sm-9 col-sm-offset-3 col-md-10 col-lg-10 col-md-offset-2 main" id="main">
@@ -38,6 +39,7 @@ $('#articlebar').addClass('active');
             <textarea  class="form-control" name="content" rows="12" >{{$data[0]->article_content}} </textarea>
         </div>
         <button type="submit" class="btn btn-default" style="border: solid black 2px;">Submit</button>
+        <a class="btn btn-danger" href="{{asset('admin/return')}}"" style="border: solid black 2px">Cancel</a>
 
     </form>
   </div>

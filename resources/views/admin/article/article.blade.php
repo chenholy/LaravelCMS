@@ -4,7 +4,19 @@
 
 $(document).ready(function(){ //will fail to register listener if click function is not in a parent function
 $('#articlebar').addClass('active');
+$('#checkbtn').click(function(){
+  var checked = $('#articlelist').find(':checked').length;
+  if(checked == 0){
+    alert('nothing is selected');
+  }else{
+    if(confirm('Confirm Delete?')){
+      $('#checkform').submit();
+    }else{
 
+    }
+
+  }
+});
 // $('#submit-data').click(function(){
 //     var search_value = $("#submit-value").val();
 //
@@ -47,7 +59,7 @@ $('#articlebar').addClass('active');
         <button id="" class="btn btn-default" type="submit">Search</button>
         </span> </div>
     </form>
-      <form action="{{url('admin/checkbox')}}" method = "post" onsubmit="return confirm('Confirm delete?');">
+      <form id="checkform" action="{{url('admin/checkbox')}}" method = "post" >
           {{csrf_field()}}
         <h1 class="page-header">General</h1>
 
@@ -96,7 +108,7 @@ $('#articlebar').addClass('active');
             <div class="btn-toolbar operation" role="toolbar">
               <div class="btn-group" role="group"> <a class="btn btn-default" onClick="select()">All</a> <a class="btn btn-default" onClick="reverse()">Reverse</a> <a class="btn btn-default" onClick="noselect()">None</a> </div>
               <div class="btn-group" role="group">
-                <button type="submit" class="btn btn-danger" data-toggle="tooltip" data-placement="bottom" title="Delete all selected" name="checkbox_delete">Delete</button>
+                <button id="checkbtn" type="button" class="btn btn-danger" data-toggle="tooltip" data-placement="bottom" title="Delete all selected" name="checkbox_delete">Delete</button>
               </div>
             </div>
 

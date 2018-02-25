@@ -37,14 +37,14 @@ class LoginController extends BaseController
     }
 
 
-//
-//     public function crypt()
-//     {
-//       $str='kuangcao2230';
-//       $crypted = Crypt::encrypt($str);
-//
-//       echo $crypted ;
-//       echo '<br>';
-//       echo Crypt::decrypt($crypted); //decryption will remain same as input
-//     }
- }
+
+ //    public function crypt()
+ //    {
+ //      $str='123';
+ //      $crypted = Crypt::encrypt($str);
+ //
+ //      echo $crypted ;
+ //      echo '<br>';
+ //      echo Crypt::decrypt($crypted); //decryption will remain same as input
+ //    }
+  }

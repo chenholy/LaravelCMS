@@ -34,6 +34,8 @@ Route::group(['middleware'=>['web','admin.login'],'prefix'=>'admin','namespace'=
   Route::any('deleteA/{id}','DeleteController@deleteA');
   Route::any('deleteC/{id}','DeleteController@deleteC');
   Route::post('checkbox','DeleteController@checkbox');
+  Route::any('return','DeleteController@cancel');
+
 
 
 });
